@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DataTablers_Scroll_Infinete.props" />
+</Project>

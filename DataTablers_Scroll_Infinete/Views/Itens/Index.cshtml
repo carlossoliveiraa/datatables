@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Itens";
+}
+
+<h2>Itens</h2>
+
+<table id="itensTable" class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+
+              <th>ID2</th>
+            <th>Nome2</th>
+            <th>Descrição2</th>
+            <th>Preço2</th>
+
+            <th>ID3</th>
+            <th>Nome3</th>
+            <th>Descrição3</th>
+            <th>Preço3</th>
+
+            <th>ID4</th>
+            <th>Nome4</th>
+            <th>Descrição4</th>
+            <th>Preço4</th>
+
+        </tr>
+    </thead>
+</table>
+
+@section Scripts {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#itensTable').DataTable({
+                "pageLength": 10, // Define o número de registros por página para 10
+                "ajax": {
+                    "url": '@Url.Action("GetItens", "Itens")',
+                    "dataSrc": ""
+                },
+                "columns": [
+                    { "data": "id" },
+                    { "data": "nome" },
+                    { "data": "descrição" },
+                    { "data": "preço" },
+
+                    { "data": "id2" },
+                    { "data": "nome2" },
+                    { "data": "descrição2" },
+                    { "data": "preço2" },
+
+                      { "data": "id3" },
+                    { "data": "nome3" },
+                    { "data": "descrição3" },
+                    { "data": "preço3" },
+
+                    { "data": "id4" },
+                    { "data": "nome4" },
+                    { "data": "descrição4" },
+                    { "data": "preço4" }, 
+                ]
+            });
+        });
+    </script>
+}
+

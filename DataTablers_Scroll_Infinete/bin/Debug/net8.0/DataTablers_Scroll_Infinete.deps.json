@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DataTablers_Scroll_Infinete/1.0.0": {
+        "runtime": {
+          "DataTablers_Scroll_Infinete.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataTablers_Scroll_Infinete/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
